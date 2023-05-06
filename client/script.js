@@ -84,7 +84,8 @@ const handleSubmit = async (e) => {
   // messageDiv.innerHTML = "..."
   loader(messageDiv);
 
-  const response = await fetch("http://localhost:5000", {
+  // Update URL from "http://localhost:5000" to "https://prodigy-ai.onrender.com", which hosts the server side of the app on Render.com.
+  const response = await fetch("https://prodigy-ai.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
